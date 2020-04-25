@@ -1,74 +1,103 @@
-.orange-bg {
-    background: #fceae8;
-    border-radius: 10px;
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a:hover{
+    text-decoration: none;
+}
+.bg-pink{
+    background-color: #FEEAE9;
+}
+.text-pink{
+    color: #ff267b;
 }
 
-.container {
-    margin-bottom: 100px;
+.btn-pink{
+    background-image: linear-gradient(to bottom, #FF589B, #FF136F);
+    color: #ffff;
+}
+/* ==== Header ===== */
+.search-bar{
+    position: relative;
+    width: 65%;
+}
+.search-bar .form-control{
+    background-color: #F8F8F8;
+    border-radius: 25px;
+    border-color: transparent;
+    padding-left: 25px;
+}
+.search-bar button{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.search-bar .btn:focus{
+    outline: none;
+    box-shadow: none;
+    color: #ff2a7e !important;
+}
+/* ==== Slider ==== */
+.carousel{
+    border-radius: 15px;
+}
+.carousel-indicators li{
+    height: 8px;
+    width: 16px;
+    border-radius: 5px;
+    background-clip:unset;
+    border: 0;
+    opacity: 1;
+}
+.carousel-indicators .active{
+    background-color: #ff267b;
+    width: 35px;
 }
 
-.carousel-item {
-    padding: 20px 40px;
-}
-
-.price {
-    color: #ff136f;
-}
-
-.buy-now-button {
-    color: #fff;
-    background-image: linear-gradient(to bottom, #ff589b 0%, #ff136f 100%);
-    border: none;
-    border-radius: 8px;
-    padding: 9px 25px;
-}
-
-.categories h1 {
+/* ==== Category ==== */
+#category .cat{
     color: #ffffff;
+    border-radius: 12px;
+}
+#category  .cat:hover h1{
+    transform: translateX(20px);
+    transition: .3s ease-in-out;
 }
 
-.categories img {
-    width: 100px;
+#category .cat img{
+    height: 110px;
+}
+#category #cat-1{
+    background-image: linear-gradient(45deg , #FF9C35 , #FFD019);
+}
+#category #cat-2{
+    background-image: linear-gradient(to bottom , #FF589B , #FF136F);
+}
+#category #cat-3{
+    background-image: linear-gradient(45deg , #4289FF , #3F07F8);
 }
 
-.cat1,
-.cat2,
-.cat3 {
-    padding: 10px 30px;
+
+/* ==== Products ==== */
+#products .card{
+    border: 0;
+    box-shadow: 0 0 30px #0000000d;
+    border-radius: 12px;
+    padding-bottom: 15px;
+    transition: .3s ease-in-out;
+}
+#products .card:hover{
+    box-shadow: 0 0 40px #524f4f3b;
+}
+.products-cat-title a{
+    color: #FF9D00;
+}
+/* ==== subscription===== */
+.subscription .bg-pink{
     border-radius: 10px;
 }
-
-.cat1 {
-    background-image: linear-gradient(145deg, #FF9C35, #FFD019)
-}
-
-.cat2 {
-    background-image: linear-gradient(145deg, #FF589B, #FF136F);
-}
-
-.cat3 {
-    background-image: linear-gradient(145deg, #4289FF, #07F8C3);
-}
-
-.card {
-    border: none;
-    box-shadow: 5px 5px 10px lightgray;
-    border-radius: 10px;
-}
-
-.card-footer {
-    background-color: white;
-    border-top: none;
-}
-
-#subscribe {
-    height: 300px;
-}
-
-#subscribe h6 {
-    color: gray;
-}
-
-footer {
-    text-align: center;
+.subscription .form-control{
+    border:0;
 }
